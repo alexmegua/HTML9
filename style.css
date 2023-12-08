@@ -1,0 +1,174 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    background-image: url("background.jpg")
+}
+
+.difficulty-text {
+	  text-shadow: 0 2px 1px #D9933B, 
+      -1px 3px 1px #D6951B; 
+}
+
+.option {
+  padding:0 30px 0 10px;
+  min-height:40px;
+  display:flex;
+  flex-grow: 1;
+  align-items:center;
+  border-top:#222 solid 1px;
+  position:absolute;
+  top:0;
+  width: 100%;
+  pointer-events:none;
+  order:2;
+  z-index:1;
+  transition:background .4s ease-in-out;
+  box-sizing:border-box;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.option:hover {
+  background:#666;
+}
+
+.select:focus .option {
+  position:relative;
+  pointer-events:all;
+}
+.difficulty-select {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+#cards-container, div, #result, #restart-btn {
+    text-align: center;
+}
+
+.back {
+	padding: 10px;
+	background-image: linear-gradient(to right top, #c75e1c, #a95618, #8c4c16, #724315, #593815);
+	border-radius: 6px;
+}
+
+.current-step {
+	background-color: #D6951B;
+	padding: 10px;
+}
+	
+.restart-button {
+  margin-top: 10px;
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: none;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+}
+
+.block-restart {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+	background-color:#F18B11;
+}
+
+.main-block {
+	background: #F18B11;
+	padding: 10px;
+	border-radius: 5px;
+    display: flex;
+	flex-direction: column;
+}
+
+.head {
+	background-color: #CF8123;
+}
+
+.translate-input {
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid #E91E63;
+	background: rgba(#E91E63, .2);
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: #E91E63;
+}
+
+.check-button {
+  margin-top: 10px;
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+}
+.check-button:hover, .check-button:active, .restart-button:hover, .restart-button:active {
+  background-color: #FF7C00;
+  background-position: 0 0;
+  color: #26222E;
+}
+.check-button:active, .restart-button:active {
+  opacity: .5;
+}
+
+.result-block {
+	background: #F18B11;
+	padding: 10px;
+	border-radius: 6px;
+}
+
+#result {
+    margin-top: 20px;
+}

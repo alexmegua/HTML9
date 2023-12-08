@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<TITLE>HTML</TITLE>
+<link rel="stylesheet" href="style.css"> 
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="script.js"></script>
+</HEAD>
+<BODY>
+<div class="back">
+    <div class="head">
+        <div id="cards-container"></div>
+        <div>
+            <p id="current-step" class="current-step"></p>
+            <p id="correct-count" class="count-info">Правильні: 0</p>
+            <p id="incorrect-count" class="count-info">Неправильні: 0</p>
+        </div>
+        <div class="main-block">
+            <input type="text" id="translation" placeholder="Введіть переклад" class="translate-input">
+            <button id="check-btn" class="check-button">Перевірити</button>
+        </div>
+        <div id="result" class="result-block"></div>
+        <div class="difficulty-block">
+            <label for="difficulty" class="difficulty-text">Рівень складності:</label>
+            <select id="difficulty" class="difficulty-select">
+                <option value="easy" class="option">Легкий</option>
+                <option value="medium" class="option">Середній</option>
+                <option value="hard" class="option">Складний</option>
+            </select>
+        </div>
+    </div>
+</div>
+</BODY>
+</html>
+
